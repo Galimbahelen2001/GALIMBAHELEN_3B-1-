@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subject Schedules</title>
+	<!-- CSS styles -->
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-top: 50px;
+			color: #333;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 50px auto;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #888888;
+			padding: 30px;
+			width: 80%;
+		}
+
+		form {
+			width: 100%;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 5px;
+			color: #333;
+		}
+
+		.form-input {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: #333;
+		}
+
+		.form-submit {
+			background-color: #355c7d;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.form-submit:hover {
+			background-color: #152935;
+			box-shadow: 0px 0px 5px #888888;
+		}
+
+		table {
+			width: 80%;
+			margin: 50px auto;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #888888;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #ccc;
+			font-size: 18px;
+		}
+
+		th {
+			background-color: #355c7d;
+			color: #fff;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		/* Styles for buttons */
+		.edit-button,
+		.delete-button {
+			background-color: #007bff;
+			color: #fff;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.edit-button:hover {
+			background-color: #0062cc;
+		}
+
+		.delete-button:hover {
+			background-color: #dc3545;
+		}
+
+		/* Styles for search bar */
+		.search-bar {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.search-bar-input {
+			flex-grow: 1;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: #333;
+		}
+
+		.search-bar-input:focus {
+			border-color: #007bff;
+			box-shadow: 0px 0px 5px #888888;
+		}
+
+		.search-bar-button {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			margin-left: 10px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.search-bar-button:hover {
+			background-color: #0062cc;
+		}
+
+		.search-bar-results {
+			margin-top: 20px;
+			text-align: center;
+			color: #888;
+		}
